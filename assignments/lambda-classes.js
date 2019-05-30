@@ -68,3 +68,91 @@ class ProjectManagers extends Instructor {
     }
 }
 
+const billy = new Instructor({
+    name: "Billy",
+    location: "Bucksnort",
+    age: 45,
+    favLanguage: 'FORTRAN',
+    specialty: "Contempt",
+    catchPhrase: "That's not how I would do it..."
+})
+
+const zoe = new Instructor({
+    name: "Zoe",
+    location: "Lulaville",
+    age: 28,
+    favLanguage: 'TyepScript',
+    specialty: "Front-End",
+    catchPhrase: "You can do it!"
+})
+
+const jeremiah = new Instructor({
+    name: "Jeremiah",
+    location: "Big Pond",
+    age: 32,
+    favLanguage: 'C++',
+    specialty: "Back-end",
+    catchPhrase: "Ribbit"
+})
+
+const bill = new ProjectManagers({
+    name: "Bill",
+    location: "Sonora",
+    age: 40,
+    favLanguage: 'JavaScript',
+    specialty: "Middleware",
+    catchPhrase: "That's interesting",
+    gradClassName: "CS2",
+    favInstructor: "Billy"
+})
+
+const martha = new ProjectManagers({
+    name: "Martha",
+    location: "Philadelphia",
+    age: 22,
+    favLanguage: 'Python',
+    specialty: "UX",
+    catchPhrase: "Let's go!",
+    gradClassName: "UX2",
+    favInstructor: "Zoe"
+})
+
+const jill = new ProjectManagers({
+    name: "Jill",
+    location: "D.C.",
+    age: 25,
+    favLanguage: 'JavaScript',
+    specialty: "iOS",
+    catchPhrase: "Go team!",
+    gradClassName: "iOS4",
+    favInstructor: "Billy"
+})
+
+const jeff = new Student({
+    name: "Jeff",
+    location: "Bucksnort",
+    age: 45,
+    previousBackground: "Landscaping",
+    className: "Web12",
+    favSubjects: ['HTML', 'JavaScript', 'CSS']
+})
+
+const angela = new Student({
+    name: "Angela",
+    location: "Tuscon",
+    age: 50,
+    previousBackground: "Administration",
+    className: "CS23",
+    favSubjects: ['HTML', 'JavaScript', 'Python']
+})
+
+const donny = new Student({
+    name: "Donny",
+    location: "Allerna",
+    age: 29,
+    previousBackground: "IT",
+    className: "CS@$",
+    favSubjects: ['Python', 'JavaScript', 'Rust']
+})
+
+donny.PRAssignment("Web Fundamentals");
