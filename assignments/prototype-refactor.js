@@ -258,7 +258,9 @@ function toTheDeath(player1, player2) {
 		victor = player2;
 		defeated = player1;
 	}
+
 	let outcome = `${victor.name} has carried the day for ${victor.team} and sent ${defeated.name} wimpering back to ${defeated.team}.`
+	
 	console.log(outcome);
 };
 
