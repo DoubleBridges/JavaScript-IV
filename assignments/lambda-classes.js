@@ -15,7 +15,7 @@ class Person {
 class Instructor extends Person {
     constructor(attributes){
         super(attributes);
-        this.specialty = attributes,specialty;
+        this.specialty = attributes.specialty;
         this.favLanguage = attributes.favLanguage;
         this.catchPhrase = attributes.catchPhrase;
     }
@@ -35,6 +35,7 @@ class Student extends Person {
         this.previousBackground = attributes.previousBackground;
         this.className = attributes.className;
         this.favSubjects = attributes.favSubjects;
+        this.grade = attributes.grade
     }
 
     listsSubjects(){
@@ -103,7 +104,7 @@ const bill = new ProjectManagers({
     specialty: "Middleware",
     catchPhrase: "That's interesting",
     gradClassName: "CS2",
-    favInstructor: "Billy"
+    favInstructor: billy
 })
 
 const martha = new ProjectManagers({
@@ -114,7 +115,7 @@ const martha = new ProjectManagers({
     specialty: "UX",
     catchPhrase: "Let's go!",
     gradClassName: "UX2",
-    favInstructor: "Zoe"
+    favInstructor: zoe
 })
 
 const jill = new ProjectManagers({
@@ -125,7 +126,7 @@ const jill = new ProjectManagers({
     specialty: "iOS",
     catchPhrase: "Go team!",
     gradClassName: "iOS4",
-    favInstructor: "Billy"
+    favInstructor: jeremiah
 })
 
 const jeff = new Student({
@@ -156,3 +157,9 @@ const donny = new Student({
 })
 
 donny.PRAssignment("Web Fundamentals");
+
+const favInst = function(pm) {
+    return `${pm.name}'s favorite instructor's catchphrase is "${pm.favInstructor.catchPhrase}".`
+}
+
+console.log(favInst(jill));
